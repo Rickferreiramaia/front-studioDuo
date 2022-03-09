@@ -1,0 +1,225 @@
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to left, transparent 20%, white 100%),
+    url("header.png");
+  position: absolute;
+}
+
+#shape_cab {
+  background-color: #a141eb;
+  margin-right: 50%;
+  height: 80px;
+
+  border-bottom-right-radius: 50px;
+  width: 64%;
+}
+#imgIcone {
+  margin: -5px 10px;
+}
+/* Estilização botão seja um franqueado */
+#botao1 {
+  background-color: #e1a607;
+  border: none;
+  border-radius: 45px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  margin-left: 15%;
+  font-size: 15px;
+  font-family: "Montserrat";
+  width: 280px;
+}
+/*Estilização botão seja um consultor*/
+#botao2 {
+  background-color: #7928b7;
+  border: none;
+  border-radius: 45px;
+  height: 50px;
+  width: 280px;
+  margin: 9px;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  margin-left: 2%;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+/*Estilização botao quero comprar*/
+#botao3 {
+  background-color: #09cbf0;
+  border: none;
+  text-align: center;
+  border-radius: 45px;
+  position: absolute;
+  height: 50px;
+  align-content: center;
+  margin: 3px;
+  color: white;
+  margin-left: 54%;
+  margin-top: -65px;
+  width: 220px;
+  font-size: 15px;
+  font-family: "Montserrat Black";
+}
+/*Estilização botão área restrita */
+#botao4 {
+  background-color: #e1a607;
+  border: none;
+  position: absolute;
+  margin-top: -80px;
+  text-align: center;
+  border-radius: 5px;
+  height: 45px;
+  padding: 4px;
+  color: white;
+  margin-left: 84%;
+  width: 170px;
+  font-size: 11px;
+  font-family: "Montserrat ";
+}
+/*Estilização de texto do titulo duvidas de header */
+#tituloDuvidas {
+  color: #e1a607;
+  margin-top: 100px;
+  font-size: 45px;
+  font-family: "Montserrat Black";
+  margin-left: 10%;
+}
+/*Estilização de texto lista de duvidas  em header */
+#textoDuvidas {
+  margin-left: 10%;
+  font-size: 18px;
+}
+/*Font de texto  lista de duvidas frequantes em header  */
+#textoDuvidasFrequentes {
+  font-family: "Montserrat";
+}
+/*Font de texto caso de duvidas em header*/
+#textoCasoDuvidas {
+  color: #797979;
+  font-family: "Montserrat ExtraLight";
+}
+/*Estilização de clique a aqui do header*/
+#textoDuvidasClick {
+  color: #a141eb;
+  text-decoration: underline;
+}
+
+#duvidas {
+  margin-top: 550px;
+}
+
+/*Estilização seta de duvidas do body*/
+
+#imgSeta {
+  justify-content: space-between;
+  cursor: pointer;
+  width: 25px;
+  height: 15px;
+}
+/*accordion*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+.acordeao {
+  width: 100%;
+  color: #ecf0f1;
+  height: 950px;
+  top: 10%;
+  background-color: #f1f1f1;
+
+  margin: 0px 0px 0px 0;
+}
+.acordeao-item {
+  margin-bottom: 20px;
+  margin: 0px 0px 0px 0;
+  margin-right: 18%;
+  margin-left: -8%;
+  font-size: 15px;
+}
+/*Estilização de titulo de duvidas de body */
+.acordeao-item-titulo {
+  cursor: pointer;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 1px;
+  font-family: "Montserrat Black";
+  color: #a141eb;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 15%;
+}
+/*Estilização de Texto de duvidas de body*/
+.acordeao-item-conteudo {
+  max-height: 0;
+  overflow: hidden;
+  color: #a6a6a6;
+  font-family: "Montserrat ExtraLight";
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 18%;
+
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+.acordeao-item_isActive .acordeao-item-titulo {
+  padding-bottom: 0;
+}
+.acordeao-item_isActive .acordeao-item-conteudo {
+  padding-bottom: 20px;
+  max-height: 200px;
+}
+.acordeon-item::after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("./icones/seta.png") no-repeat center center;
+  padding: 30px;
+  transform: rotate(0deg);
+}
+.acordeon-item.active::after {
+  transform: rotate(180deg);
+}
+/*Estilização de footer*/
+footer {
+  background-color: #a141eb;
+  height: 45px;
+  margin-left: -20px;
+  margin-right: 0px;
+}
+@media only screen and (max-device-width: 800px) {
+  .header {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 800px) {
+  .header {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 1000px) {
+  .menu {
+    width: 300px;
+  }
+}
+@media only screen and (max-device-width: 900px) {
+  .header {
+    width: 500px;
+  }
+}
